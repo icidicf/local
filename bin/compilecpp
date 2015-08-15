@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+if [ $# -lt 1 ]
+then
+	echo "please input cpp file"
+	exit 0
+fi
+
+for var in $@
+do 
+	echo "the para is $var"
+done
+#g++ 

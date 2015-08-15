@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#use dot to generate a jpg file , given the file describe the graph , output the target jpg 
+if [ $# -lt 1 ]
+then
+	echo "please specify the input file"
+	exit 0
+fi
+
+inputfile=$1
+outputfile=${inputfile%.*}.jpg
+
+dot -T jpg $inputfile -o $outputfile
+
+#echo "input file is $inputfile  outfile is $outputfile"
