@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then 
+	echo "input the war to deploy"
+	exit
+else 
+	sudo cp $1 /var/lib/tomcat7/webapps 
+fi
+
