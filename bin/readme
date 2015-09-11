@@ -1,0 +1,4 @@
+dp   deploy war file to tomcat 7 
+dt   use dot to generate graph
+addenc   add chinese encoding support to ant build.xml
+cppgen use to generate C++ source file template 
