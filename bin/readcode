@@ -1,0 +1,7 @@
+#!/bin/bash
+
+/usr/bin/ctags -R
+cscope -Rb
+
+cp ~/local/configure/Doxyfile ./
+doxygen Doxyfile 1 > /dev/null 2>&1  &
