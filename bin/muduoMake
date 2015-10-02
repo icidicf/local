@@ -1,7 +1,8 @@
 #!/bin/bash
 
+set -x
 
-cfile=""
+ccfile=""
 
 if [ -z $1 ]
 then 
@@ -12,7 +13,8 @@ fi
     
 for var in "$@"
 do
-    c_file=$c_file" "$var
-    echo "$c_file"
+    cc_file=$cc_file" "$var
 done
-#g++ -I/git/network/openSource/build/release-install/include *.cc  -L/git/network/openSource/build/release-install/lib  -lmuduo_net -lmuduo_base -lpthread
+
+echo "$cc_file"
+g++   $cc_file   -lmuduo_net -lmuduo_base -lpthread
