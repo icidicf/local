@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+cfile=""
+
+if [ -z $1 ]
+then 
+    echo "please specify input C file"
+    exit
+fi
+
+    
+for var in "$@"
+do
+    c_file=$c_file" "$var
+    echo "$c_file"
+done
+#g++ -I/git/network/openSource/build/release-install/include *.cc  -L/git/network/openSource/build/release-install/lib  -lmuduo_net -lmuduo_base -lpthread
