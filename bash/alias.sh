@@ -15,7 +15,7 @@ alias install='sudo apt-get install'
 alias rs='sudo service tomcat7 restart'
 alias tm='cd /var/lib/tomcat7/webapps'
 alias chrome="chromium-browser"
-alias ping='nping'
+#alias ping='nping'
 
 
 
