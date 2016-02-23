@@ -1,0 +1,22 @@
+#!/usr/bin/python
+import sys
+import os.path
+
+if (len(sys.argv) < 2 ):
+    print "please specify the file name"
+    sys.exit(0)
+
+filename=sys.argv[1]+".sh"
+print "the file name is " + filename;
+
+if os.path.isfile(filename):
+    print filename+" the file is exist already, please choose the file name " 
+    sys.exit(0)
+
+with open(filename,'wt') as f:
+    f.write("#!/bin/bash"+os.linesep)
+    f.write(os.linesep*2)
+    
+
+os.chmod(filename,0764);
+
