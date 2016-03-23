@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then 
+    echo "input the keyword to kill"
+    exit
+else 
+    ps -ef | grep $1 | awk '{print $2}' | xargs sudo kill -9
+fi
+
