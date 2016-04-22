@@ -27,9 +27,9 @@ call plug#begin('~/.vim/plugged')
 " Add plugins to &runtimepath
 
 Plug 'vim-scripts/taglist.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
-
-
 
 
 
@@ -68,6 +68,7 @@ Plugin 'VundleVim/Vundle.vim'
 "lyp's personal vim pluging
 Plugin 'derekwyatt/vim-scala'
 
+Plugin 'Valloric/YouCompleteMe'
 
 "===========================================================================
 

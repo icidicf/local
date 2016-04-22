@@ -15,8 +15,11 @@ map <Leader>w   diw
 "normal mode
 :nnoremap <leader>ev :split $MYVIMRC<cr>
 :nnoremap <leader>eb :split /home/lyp/.bashrc<cr>
+:nnoremap <leader>map :split ~/local/vim/mymap.vim<cr>
 :nnoremap <leader>sc :source $MYVIMRC<cr>
 
+:nnoremap <leader>t :Tlist<cr>
+:nnoremap <leader>n :NERDTree<cr>
 
 "visual mode
 "annotate the selected under visual mode
@@ -29,20 +32,20 @@ map <Leader>w   diw
 
 
 " vim script auto command settings ---- {{{
-:augroup lypgroup
-:autocmd!
-:autocmd BufNewFile *.txt :write
-:autocmd BufWritePre *.html :normal gg=G
-:autocmd FileType python nnoremap <buffer>
-<localleader>h :read "#!" + !which
-python<esc>
-:autocmd FileType python nnoremap
-<buffer> <localleader>c I#<esc>
-:autocmd FileType vim
-setlocal foldmethod=marker
-
-:augroup END
-
+":augroup lypgroup
+":autocmd!
+":autocmd BufNewFile *.txt :write
+":autocmd BufWritePre *.html :normal gg=G
+":autocmd FileType python nnoremap <buffer>
+"<localleader>h :read "#!" + !which
+"python<esc>
+":autocmd FileType python nnoremap
+"<buffer> <localleader>c I#<esc>
+":autocmd FileType vim
+"setlocal foldmethod=marker
+"
+":augroup END
+"
 " }}}
 
 :set laststatus=2

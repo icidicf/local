@@ -13,7 +13,7 @@ set softtabstop=4
 
 
 filetype on 
-syntax on 
+"syntax on 
 
 "remember last cursor position
 set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -40,4 +40,38 @@ nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 map Y "+y
+
+"taglist 
+let Tlist_Use_Right_Window = 1
+
+"color scheme
+syntax enable
+set background=dark
+"colorscheme molokai
+"colorscheme grb256 
+"colorscheme last256 
+"colorscheme luna
+"colorscheme xterm16
+"colorscheme solarized
+"colorscheme desert
+colorscheme jellybeans
+
+"/*80 character limit*/
+highlight ColorColumn ctermbg=blue guibg=Magenta      
+set textwidth=80                                                                 
+set colorcolumn=+1 
+
+
+"/*you complete me*/
+let g:ycm_filetype_whitelist = { '*': 1 }
+let g:ycm_global_ycm_extra_conf = '~/local/configure/.ycm_extra_conf.py'
+let g:ycm_extra_conf_globlist = ['~/local/configure/*']
+"let g:ycm_show_diagnostics_ui = 0
+let g:ycm_enable_diagnostic_signs = 1
+let g:ycm_enable_diagnostic_highlighting = 1
+let g:ycm_always_populate_location_list = 1 "default 0
+let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
+let g:syntastic_enable_balloons = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+
 
