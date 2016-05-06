@@ -29,6 +29,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/taglist.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe'
+Plug 'nanotech/jellybeans.vim'
 call plug#end()
 
 
