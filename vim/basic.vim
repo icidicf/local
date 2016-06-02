@@ -8,9 +8,10 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-"set autoindent
-"set smartindent
+set autoindent
+set smartindent
 
+set hlsearch
 
 filetype on 
 "syntax on 
@@ -54,7 +55,7 @@ set background=dark
 "colorscheme xterm16
 "colorscheme solarized
 "colorscheme desert
-colorscheme jellybeans
+"colorscheme jellybeans
 
 "/*80 character limit*/
 highlight ColorColumn ctermbg=blue guibg=Magenta      
