@@ -12,6 +12,8 @@ fi
 
 backupDir=./backup/
 
+apt-get install curl
+
 now=$(date "+%Hh-%Mm-%Ss-%B-%d")
 echo $now
 
